@@ -4,7 +4,7 @@
 
 ### Project Type is Responsive page
 
-######### TECH stack used in project are
+##### TECH stack used in project are
 **HTML
 **CSS
 **JS

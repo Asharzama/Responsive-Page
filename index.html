@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="images/1.jpg" onclick="clickImg(this)">
+                    <img src="images/2.jpg" onclick="clickImg(this)">
+                    <img src="images/3.jpg" onclick="clickImg(this)">
+                    <img src="images/4.jpg" onclick="clickImg(this)">
+                </div>
+
+                <div class="main-images">
+                    <img src="images/1.jpg" id="imagebox">
+                </div>
+            </div>
+            </div>
+
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Apple</p>
+                    <h2>Apple iPhone 13 Pro</h2>
+                    <div class="review">
+                        <span>(4.6) stars</span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">₹77,900.00</p>
+                        <strike>₹89,900.00</strike>
+                    </div>
+                    <p>Color : <select name="color">
+                        <option value="select color">Select Color</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                    </select></p>
+                    <p>Quantity <input type="text" value="1"></p>
+                    <button>Add to Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickImg(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>
